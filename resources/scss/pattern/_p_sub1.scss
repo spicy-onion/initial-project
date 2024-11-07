@@ -1,0 +1,223 @@
+// sec-intro
+.sec-intro {
+  .sec-grad {
+    height: 36rem;
+    background-color: $bright; /* For browsers that do not support gradients */
+    background-image: linear-gradient($bright, $white);
+    @include mobileMore {
+      height: 69rem;
+    }
+    @include tabletMore {
+      height: 47rem;
+    }
+  }
+  &__tit {
+    font-size: 4.8rem;
+    color: $primary;
+    line-height: 1.2;
+
+    @include tabletMore {
+      font-size: 8rem;
+    }
+  }
+  &__cont {
+    font-size: 1.4rem;
+    font-weight: $font-medium;
+    line-height: 2.5;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+// sec-mission
+.sec-mission {
+  .division-line {
+    border-top: 1px solid $week;
+    margin-bottom: 7rem;
+  }
+  .sec-sub1__cont {
+    @include box-line;
+    border-radius: 1.6rem;
+    text-align: center;
+    padding-bottom: 7rem;
+    margin-top: 3rem;
+
+    dl {
+      margin-top: 7rem;
+    }
+
+    dt {
+      margin-bottom: 2rem;
+      font-size: 1.6rem;
+      font-weight: $font-bolder;
+      letter-spacing: 1.2;
+      color: $black;
+    }
+    dd {
+      font-size: 1.4rem;
+      letter-spacing: 1.2;
+      color: $week;
+    }
+  }
+}
+
+// 공통 sub_tit-wrap
+.sec-sub1__tit-wrap {
+  display: flex;
+  align-items: baseline;
+  .sec-sub1__tit {
+    font-size: 2.2rem;
+    font-weight: $font-bolder;
+  }
+  .sec-sub1__desc {
+    color: $week;
+    font-size: 1.2rem;
+    margin: 1rem;
+  }
+}
+
+// sec-msg
+.sec-msg {
+  padding-top: 30rem;
+  padding-bottom: 30rem;
+  .sec-sub1__msg {
+    font-size: 3.2rem;
+    font-weight: $font-bold;
+    // letter-spacing: -1px;
+    line-height: 1.2;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    .msg_img {
+      width: 6.6rem;
+      height: 2rem;
+      vertical-align: 2px;
+    }
+    .item:nth-child(2) {
+      display: block;
+      text-align: right;
+    }
+    .light {
+      font-size: 1rem;
+      color: $week;
+      font-weight: $font-medium;
+      display: inline-block;
+      text-align: left;
+      vertical-align: 2px;
+    }
+  }
+}
+
+// sec-core
+.sec-core {
+  &__img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .sec-sub1__list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 30rem;
+  }
+  .img-tit {
+    font-weight: $font-bold;
+    font-size: 1.4rem;
+  }
+  .img-desc {
+    font-weight: $font-normal;
+    font-size: 1.1rem;
+    letter-spacing: -1px;
+    line-height: 125%;
+    color: $week;
+  }
+}
+
+.sec-property {
+  .sec-sub1__cont {
+    .property-img {
+      padding-top: 3rem;
+      padding-bottom: 30rem;
+    }
+  }
+  .txt-wrap {
+    @include posXY;
+    bottom: 20rem;
+    .total {
+      margin-bottom: 7rem;
+      .total_txt {
+        color: $week;
+        font-size: 1.4rem;
+      }
+      .num {
+        font-size: 2.4rem;
+        .total_num {
+          font-weight: $font-bolder;
+        }
+      }
+    }
+    .dot::before {
+      content: "";
+      display: block;
+      position: absolute;
+      // top: 50%;
+      left: 0;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      transform: translate(0%, -50%);
+    }
+    .txt {
+      color: $week;
+      font-size: 1.2rem;
+    }
+  }
+  .value-wrap {
+    @include flexCenter;
+    justify-content: space-between;
+  }
+  .value_num {
+    font-size: 1.4rem;
+  }
+  .value {
+    font-size: 2.4rem;
+  }
+}
+
+// sec-business-data
+.sec-business-data {
+  .sec-sub1__cont {
+    .tit-wrap {
+      font-size: 1.6rem;
+      font-weight: $font-medium;
+    }
+    .info-list {
+      display: flex;
+      .sub-tit {
+        font-size: 1.4rem;
+        font-weight: $font-medium;
+      }
+      .num {
+        font-size: 1.5rem;
+        .value-count {
+          font-size: 3.2rem;
+          font-weight: $font-medium;
+          letter-spacing: -4%;
+        }
+      }
+    }
+  }
+}
+
+// .dot::before {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   top: 50%;
+//   left: 0;
+//   width: 4px;
+//   height: 4px;
+//   border-radius: 50%;
+//   transform: translate(0%, -50%);
+// }

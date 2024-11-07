@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KRDS themplate</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="페이지 제목" />
+    <meta property="og:description" content="페이지 설명" />
+    <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg" />
+    <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="페이지 제목" />
+    <meta name="twitter:description" content="페이지 설명" />
+    <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
+    <meta name="twitter:domain" content="사이트 명" />
+    <link rel="shortcut icon" href="http://www.mysite.com/favicon.ico" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../resources/css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="../resources/js/include.js"></script>
+    <script defer src="../resources/js/ui-pattern.js"></script>
+    <script defer src="../resources/js/ui-swiper.js"></script>
+  </head>
+  <body>
+    <div id="skip-nav">
+      <a href="#gnb">메뉴 바로가기</a>
+      <a href="#container">본문 바로가기</a>
+    </div>
+    <div id="wrap">
+      <header id="header" include-html="./layout/header.html"></header>
+
+      <div class="intro">
+        <div class="text-area">
+          <div class="inner">
+            <strong class="text-area__tit"
+              >Experience It <br />
+              Powerful Exhibition Archive</strong
+            >
+          </div>
+          <div class="slide">
+            <!-- Slider main container -->
+            <div class="swiper slide-intro">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <a href="#">
+                    <picture>
+                      <source srcset="https://hobancf.or.kr/@resource/images/main/bg_intro.jpg" media="(min-width: 1024px)" />
+                      <source srcset="https://hobancf.or.kr/@resource/images/main/bg_intro.jpg" media="(min-width: 600px)" />
+                      <source srcset="https://hobancf.or.kr/@resource/images/main/bg_intro.jpg" />
+                      <img src="https://hobancf.or.kr/@resource/images/main/bg_intro.jpg" alt="Flowers" />
+                    </picture>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <picture>
+                      <source srcset="https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 1024px)" />
+                      <source srcset="https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 600px)" />
+                      <source srcset="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                      <img src="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Flowers" />
+                    </picture>
+                    <div class="text-area">
+                      <div class="inner">
+                        <strong class="text-area__tit">슬라이드 제목</strong>
+                        <p class="text-area__cont">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <span class="text-area__goto text-area__goto--hidden">바로가기</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <picture>
+                      <source srcset="https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 1024px)" />
+                      <source srcset="https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 600px)" />
+                      <source srcset="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                      <img src="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Flowers" />
+                    </picture>
+                    <div class="text-area">
+                      <div class="inner">
+                        <strong class="text-area__tit">슬라이드 제목</strong>
+                        <p class="text-area__cont">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <span class="text-area__goto text-area__goto--hidden">바로가기</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <picture>
+                      <source srcset="https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 1024px)" />
+                      <source srcset="https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 600px)" />
+                      <source srcset="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                      <img src="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Flowers" />
+                    </picture>
+                    <div class="text-area">
+                      <div class="inner">
+                        <strong class="text-area__tit">슬라이드 제목</strong>
+                        <p class="text-area__cont">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <span class="text-area__goto text-area__goto--hidden">바로가기</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#">
+                    <picture>
+                      <source srcset="https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 1024px)" />
+                      <source srcset="https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 600px)" />
+                      <source srcset="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                      <img src="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Flowers" />
+                    </picture>
+                    <div class="text-area">
+                      <div class="inner">
+                        <strong class="text-area__tit">슬라이드 제목</strong>
+                        <p class="text-area__cont">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <span class="text-area__goto text-area__goto--hidden">바로가기</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+
+              <!-- If we need navigation buttons -->
+              <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <main id="container">
+        <!-- <section class="sec-g sec-news">
+          <div class="inner">
+            <h2 class="sec-g__tit">섹션 타이틀</h2>
+            <div class="sec-g__cont">컨텐츠</div>
+            <a
+              href="#"
+              class="sec-g__more"
+              >더보기</a
+            >
+          </div>
+        </section> -->
+
+        <section class="sec-g sec-main sec-index">
+          <div class="inner">
+            <h2 class="sec-g__tit">MAIN EXHIBITION</h2>
+            <div class="sec-g__cont">
+              <ul class="Exhibition List">
+                <li>
+                  <picture class="img-wrap">
+                    <a href="#"><img src="https://arthub.co.kr/admin/admin_board_01/data/11143255.jpg" alt="a moment" /></a>
+                  </picture>
+                  <div class="txt-wrap">
+                    <span>2024 청년키움 프로젝트 단체전</span>
+                    <br />
+                    <strong>A Moment : 마주하는 순간에 대하여</strong>
+                  </div>
+                </li>
+                <li>
+                  <picture class="img-wrap">
+                    <a href="#"><img src="https://arthub.co.kr/admin/admin_board_01/data/44961061.jpg" alt="협업" /></a>
+                  </picture>
+                  <div class="txt-wrap">
+                    <span>인천아트플랫폼 기획전시</span>
+                    <br />
+                    <strong>협업의 기술</strong>
+                  </div>
+                </li>
+                <li>
+                  <picture class="img-wrap">
+                    <a href="#"><img src="https://arthub.co.kr/admin/admin_board_01/data/13906471.jpg" alt="a moment" /></a>
+                  </picture>
+                  <div class="txt-wrap">
+                    <span> 2024년 강남장애인복지관 제1회 아트페어 참여 작가 공모전</span>
+                    <br />
+                    <strong>제1회 아트 프리즘 「아트 페어」</strong>
+                  </div>
+                </li>
+                <li>
+                  <picture class="img-wrap">
+                    <a href="#"><img src="https://arthub.co.kr/admin/admin_board_01/data/11143255.jpg" alt="a moment" /></a>
+                  </picture>
+                  <div class="txt-wrap">
+                    <span>2024 청년키움 프로젝트 단체전</span>
+                    <br />
+                    <strong>A Moment : 마주하는 순간에 대하여</strong>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="sec-g__more">더보기</a>
+          </div>
+        </section>
+
+        <section class="sec-g sec-current sec-index">
+          <div class="inner">
+            <h2 class="sec-g__tit">CURRENT EXHIBITIONS</h2>
+            <div class="sec-g__cont">
+              <div class="swiper slide-studio">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://arthub.co.kr/admin/admin_board_01/data/36137265.jpg" alt="" />
+                      <em class="date">2024.10.23 - 2024.12.29</em>
+                      <br />
+                      <strong>콘크리트 앱스트랙션 : CONCRETE ABSTRACTION </strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://arthub.co.kr/admin/admin_board_01/data/80174758.jpg" alt="" />
+                      <em class="date">2024.10.03 - 2024.10.27</em>
+                      <br />
+                      <strong>비표준 불멸 계약 Non-standard Immortality Contract :: 김예나展</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://www.arthub.co.kr/admin/admin_board_01/data/42128500.jpg" alt="" />
+                      <em class="date">2024.10.15 - 2024.10.23</em>
+                      <br />
+                      <strong>2024 이동하는 세계 (WORLDS ON THE MOVE) :: 정서온展</strong>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                      <em>2024.10.16</em>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                      <em>2024.10.16</em>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                      <em>2024.10.16</em>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                      <em>2024.10.16</em>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="sec-g__more">더보기</a>
+          </div>
+        </section>
+
+        <section class="sec-g sec-business sec-index">
+          <p>MAIN BUSINESS</p>
+          <strong>세계 현대미술의 중심, 퐁피두 센터와 함께 합니다.</strong>
+          <span class="img">
+            <img src="https://www.hanwhafoundation.org/pc/img/business/artist-2.png" alt="img" />
+          </span>
+        </section>
+
+        <section class="sec-g sec-news sec-index">
+          <div class="inner">
+            <div class="gutter">
+              <div class="tit">
+                <h3 class="sec-g__tit">NEWS</h3>
+                <div>
+                  <div class="tabs">
+                    <!-- Tab 1 -->
+                    <input type="radio" name="tab" id="tab1" checked />
+                    <label for="tab1">아트뉴스</label>
+                    <div class="tab-content">
+                      <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" style="width: 350px; height: 500px">
+                          <div class="swiper-slide">
+                            <div class="txt-area">
+                              <button class="btn">아트뉴스</button>
+                              <p>김선정 예술감독</p>
+                              <p class="date">2024.09.21</p>
+                            </div>
+                            <a href="#">
+                              <img src="../resources/images/pattern/common/main-swiper1.jpg" alt="" />
+                            </a>
+                          </div>
+                          <div class="swiper-slide">Slide 2</div>
+                          <div class="swiper-slide">Slide 3</div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+                    </div>
+
+                    <!-- Tab 2 -->
+                    <input type="radio" name="tab" id="tab2" />
+                    <label for="tab2">공모·모집</label>
+                    <div class="tab-content">Content for Tab 2</div>
+
+                    <!-- Tab 3 -->
+                    <input type="radio" name="tab" id="tab3" />
+                    <label for="tab3">아트뉴스</label>
+                    <div class="tab-content">Content for Tab 3</div>
+                    <!-- Add more tabs as needed... -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sec-g sec-media sec-index">
+          <h3 class="sec-g__tit">Media Wall</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://www.Youtubecom/">Youtube</a></li>
+            <li><a href="https://www.Facebook.com/">Facebook</a></li>
+            <li><a href="https://www.naver.com/">Naver Blog</a></li>
+            <li><a href="https://www.twitter.com/">Twitter</a></li>
+          </ul>
+          <div class="container">
+            <div class="right-element"><img src="../resources/images/pattern/common/right_img.jpg" alt="" /></div>
+          </div>
+          <strong>To Create The Best Event Service</strong>
+        </section>
+      </main>
+      <footer id="footer" include-html="./layout/footer.html"></footer>
+    </div>
+  </body>
+</html>
