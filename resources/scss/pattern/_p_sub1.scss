@@ -157,17 +157,6 @@
         }
       }
     }
-    .dot::before {
-      content: "";
-      display: block;
-      position: absolute;
-      // top: 50%;
-      left: 0;
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      transform: translate(0%, -50%);
-    }
     .txt {
       color: $week;
       font-size: 1.2rem;
